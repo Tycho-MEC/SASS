@@ -1,0 +1,19 @@
+#!/sbin/openrc-run
+
+name="SendSpin Audio Player"
+description="SendSpin streaming audio player for Home Assistant"
+
+command="/home/dave/.local/bin/sendspin"
+command_args="--headless"
+command_user="dave:dave"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    need net
+    after firewall
+}
+
+start_pre() {
+    checkpath --directory --owner $command_user --mode 0755 /run
+}
