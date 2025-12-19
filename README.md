@@ -1,4 +1,4 @@
-# SASS - Simple Apline SendSpin - Raspberry Pi Audio Streaming Player
+# SASS - Simple Alpine SendSpin - Raspberry Pi Audio Streaming Player
 
 A minimal Alpine Linux image for Raspberry Pi that runs [SendSpin](https://github.com/Sendspin/sendspin-cli) - a high-quality audio streaming protocol for Home Assistant's Music Assistant.
 
